@@ -1,0 +1,17 @@
+.sh-order-list{
+  .item{
+    margin-bottom: 10px;
+
+    div.address{
+      display: flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    div.info{
+      display: flex;
+      flex-direction: column;
+      margin: 8px 16px 8px 0;
+    }
+  }
+}

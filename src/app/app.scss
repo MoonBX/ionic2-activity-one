@@ -1,0 +1,123 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.content-md{
+  background-color: #EDF0F4;
+}
+.content-ios{
+  background-color: #EDF0F4;
+}
+.item-md{
+  padding-left: 0px
+}
+.item-ios{
+  padding-left: 0px
+}
+.item-inner{
+  padding-left: 16px;
+}
+
+.p-v-sm{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.m-t-sm{
+  margin-top: 10px;
+}
+.m-b-sm{
+  margin-bottom: 10px;
+}
+
+.ap-button{
+  height: 4rem;
+}
+
+.text-md{
+  font-size: 1.2em;
+}
+
+::-webkit-input-placeholder
+{
+  text-align: right;
+}
+
+.order-list .label-md{
+  margin: 13px 8px 0 0;
+}
+
+.order-inner-intro{
+  overflow: hidden;
+}
+.intro-thumb{
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.intro-thumb img{
+  border-radius: 10px;
+}
+
+.item-md{
+  .intro-right{
+    overflow: hidden;
+    margin-top:8px;
+    .intro-title{
+      font-weight: 600;
+      font-size: 1.6rem;
+      float: left;
+    }
+    .intro-date{
+      float: right;
+      margin-top: 4px;
+      font-size: 1.2rem;
+      color: #909090;
+    }
+    .intro-amount{
+      font-size: 1.2rem;
+      color: #909090;
+    }
+    .intro-price{
+      float: left;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.row{
+  overflow: hidden;
+}
+
+.toolbar-background-md{
+  background: #21262C;
+}
+.toolbar-title-md{
+  color: #ffffff;
+}
+
+.list-md {
+  margin: 10px 0 16px 0;
+}
+
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.bar-button-default-md:hover:not(.disable-hover), .bar-button-clear-md-default:hover:not(.disable-hover), .bar-button-md-default:hover:not(.disable-hover) {
+  color: #f1f1f1;
+}

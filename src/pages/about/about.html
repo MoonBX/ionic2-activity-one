@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      立即预约2
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="m-t-sm">
+    <ion-item>
+      <ion-label>预约人</ion-label>
+      <ion-input type="text" placeholder="姓名"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>手机号码</ion-label>
+      <ion-input type="text" placeholder="收货人号码"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>安装地址</ion-label>
+      <ion-input type="text" placeholder="省/市/区"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>详细地址</ion-label>
+      <ion-input type="text" placeholder="街道/门牌号"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding margin>
+    <button ion-button block class="text-md p-v-sm ap-button" (click)="sendToAppointment()">立即预约</button>
+  </div>
+</ion-content>

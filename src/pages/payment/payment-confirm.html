@@ -1,0 +1,19 @@
+<ion-content style="padding: 10px 15px;background: #ffffff;">
+  <ion-row style="font-size: 1.8rem;padding-bottom: 10px;display: flex; justify-content:center;">付款确认</ion-row>
+  <div>
+    <ion-row style="margin-bottom: 20px; flex-direction: column">
+      <div style="margin-bottom: 8px"><img src="assets/icon/card.png" alt="..." width="18px"><span style="color:#606060;font-size: 1.4rem">中国工商银行</span> <span style="margin-left: 8px;font-size: 1.3rem;color: #909090">借记卡(尾号1175)</span></div>
+      <div style="font-size: 1.3rem; color: #909090; margin-left: 18px">单笔限额: 50000</div>
+    </ion-row>
+    <ion-row style="flex-direction: column;margin-bottom: 10px">
+      <div style="font-size: 1.2rem; color: #909090; margin-left: 2px">校验码已发送至手机158****2793</div>
+      <div style="position: relative"><input type="text" style="padding: 6px 12px;height: 28px;border: none; background-color: #eaeef9;border-radius: 6px; width: 100%"><button style="position: absolute;right: 2px;top: 3px;padding: 6px 25px;background: #5D9BFD;border-radius: 6px;color: #fff">发送</button></div>
+    </ion-row>
+    <ion-row>
+      <div style="display:flex; flex-direction: row-reverse;width: 100%;">
+        <button ion-button clear (click)="close()">取消</button>
+        <button ion-button clear (click)="payConfirm()">确认</button>
+      </div>
+    </ion-row>
+  </div>
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>订单</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="sh-order-list">
+    <ion-item class="item" (click)="skipToSelectAddr()">
+      <div class="address">
+        <span>添加收货地址</span>
+        <span><ion-icon name="arrow-forward"></ion-icon></span>
+      </div>
+    </ion-item>
+    <ion-item class="item">
+      <ion-row>
+        <div class="title">
+          商品信息
+        </div>
+      </ion-row>
+      <ion-row>
+        <div class="thumb">
+          <ion-thumbnail item-left class="intro-thumb">
+            <img src="assets/icon/封面7.jpg">
+          </ion-thumbnail>
+        </div>
+        <div class="info">
+          <div>我是智能锁啊啊</div>
+          <div>数量: 2把</div>
+          <div>¥300/每月</div>
+        </div>
+      </ion-row>
+    </ion-item>
+    <ion-item class="item">
+      <div class="address">
+        <span>支付方式</span>
+        <span>草根金融</span>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer class="shop-button">
+  <ion-toolbar>
+    <button ion-button full (click)="skipToPay()" style="position: absolute; bottom: 0px; margin-bottom: 0px; background: #5D9BFD;padding-top: 6px; padding-bottom: 6px;height: 4rem;">去支付</button>
+  </ion-toolbar>
+</ion-footer>

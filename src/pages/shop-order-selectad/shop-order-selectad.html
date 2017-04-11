@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>添加收货地址</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!--<ion-item>-->
+    <!--<ion-label>省市区选择器</ion-label>-->
+    <!--<city-picker item-content-->
+                 <!--[cancelText]="'取消'"-->
+                 <!--[doneText]="'完成'"-->
+                 <!--[separator]="' - '"-->
+                 <!--[citiesData]="cityData"-->
+                 <!--[(ngModel)]="cityName"-->
+                 <!--(ionChange)="cityChange($event)">-->
+
+    <!--</city-picker>-->
+  <!--</ion-item>-->
+  <!--<p>地区编码：  {{code}}-->
+  <!--</p>-->
+  <ion-list class="sh-address-list">
+    <ion-item class="item" (click)="skipToAddAddr()">
+      <ion-row class="add-address">
+        <span>新增收货地址</span>
+        <span><ion-icon name="arrow-forward"></ion-icon></span>
+      </ion-row>
+    </ion-item>
+    <ion-item class="item" (click)="selectSuccess()">
+      <ion-row class="address">
+        <div class="up">
+          <div>收件人: <span>啦啦啦</span></div>
+          <div>地&nbsp;&nbsp;&nbsp;&nbsp;址: <span>浙江省杭州市余杭区五常街道西西水岸花苑39幢</span></div>
+        </div>
+        <div class="bottom">
+          <div><input type="radio"><label>当前地址 </label></div>
+          <div>
+            <span (click)="skipToSelectAddr()"><ion-icon class="bottom-icon" name="create"></ion-icon>编辑</span>
+            <span style="margin-left: 15px"><ion-icon class="bottom-icon" name="trash"></ion-icon>删除</span>
+          </div>
+        </div>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

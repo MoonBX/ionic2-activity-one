@@ -1,0 +1,124 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      我的订单
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!--<ion-list>-->
+    <!--<ion-list-header>Follow us on Twitter</ion-list-header>-->
+    <!--<ion-item>-->
+      <!--<ion-icon name="ionic" item-left></ion-icon>-->
+      <!--@ionicframework-->
+    <!--</ion-item>-->
+  <!--</ion-list>-->
+  <div>
+    <ion-segment [(ngModel)]="pet" style="background-color: #fff;">
+      <ion-segment-button value="inApp">
+        分期中
+      </ion-segment-button>
+      <ion-segment-button value="inFinish">
+        已完成
+      </ion-segment-button>
+      <ion-segment-button value="inCancel">
+        已取消
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'inApp'" class="order-list">
+      <div>
+        <ion-item>
+          <div style="font-size: 1.3rem;" class="b-b order-inner-info">
+            <div class="m-b-sm">
+              <label style="color: #909090">收件人: </label><span style="margin-left: 10px; font-size: 1.5rem">啦啦啦</span>
+            </div>
+            <div class="m-b-sm">
+              <label style="color: #909090">地&nbsp;&nbsp;&nbsp;&nbsp;址: </label><span style="margin-left: 10px; font-size: 1.5rem">浙江省杭州市余杭区五常街道西西水岸花苑39幢1201</span>
+            </div>
+          </div>
+          <div class="order-inner-intro">
+            <ion-thumbnail item-left class="intro-thumb">
+              <img src="assets/icon/封面7.jpg">
+            </ion-thumbnail>
+            <div class="intro-right">
+              <div class="row">
+                <h3 class="intro-title">0元购活动</h3>
+                <span class="intro-date">2012-02-12</span>
+              </div>
+              <div class="row">
+                <label class="intro-amount">数量: 1把</label>
+              </div>
+              <div class="row p-v-sm">
+                <label class="intro-price">¥<span style="font-size: 2.4rem">150</span>/月</label>
+                <button ion-button outline style="float: right;" (click)="cancel()">取消预约</button>
+              </div>
+            </div>
+
+          </div>
+        </ion-item>
+        <ion-card>
+
+          <ion-card-header>
+            支付明细
+          </ion-card-header>
+
+          <ion-card-content>
+            <!-- Add card content here! -->
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+      <div>
+        <ion-item>
+          <div style="font-size: 1.3rem;" class="b-b order-inner-info">
+            <div class="m-b-sm">
+              <label style="color: #909090">收件人: </label><span style="margin-left: 10px; font-size: 1.5rem">啦啦啦</span>
+            </div>
+            <div class="m-b-sm">
+              <label style="color: #909090">地&nbsp;&nbsp;&nbsp;&nbsp;址: </label><span style="margin-left: 10px; font-size: 1.5rem">浙江省杭州市余杭区五常街道西西水岸花苑39幢1201</span>
+            </div>
+          </div>
+          <div class="order-inner-intro">
+            <ion-thumbnail item-left class="intro-thumb">
+              <img src="assets/icon/封面7.jpg">
+            </ion-thumbnail>
+            <div class="intro-right">
+              <div class="row">
+                <h3 class="intro-title">0元购活动</h3>
+                <span class="intro-date">2012-02-12</span>
+              </div>
+              <div class="row">
+                <label class="intro-amount">数量: 1把</label>
+              </div>
+              <div class="row p-v-sm">
+                <label class="intro-price">¥<span style="font-size: 2.4rem">150</span>/月</label>
+                <button ion-button outline style="float: right;">取消预约</button>
+              </div>
+            </div>
+
+          </div>
+        </ion-item>
+      </div>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'inFinish'">
+      <ion-item>
+        <div>
+          <label>收件人: </label>啦啦啦
+          <label></label>
+        </div>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'inCancel'">
+      <ion-item>
+        <h2>已取消</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
